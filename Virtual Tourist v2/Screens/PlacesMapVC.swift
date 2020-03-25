@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  PlacesMapVC.swift
 //  Virtual Tourist v2
 //
 //  Created by Aleksey on 0325..20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class PlacesMapVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

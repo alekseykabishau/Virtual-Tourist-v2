@@ -9,19 +9,23 @@
 /* Begin PBXBuildFile section */
 		5B3648E0242BB16900421F88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3648DF242BB16900421F88 /* AppDelegate.swift */; };
 		5B3648E2242BB16900421F88 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3648E1242BB16900421F88 /* SceneDelegate.swift */; };
-		5B3648E4242BB16900421F88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3648E3242BB16900421F88 /* ViewController.swift */; };
+		5B3648E4242BB16900421F88 /* PlacesMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3648E3242BB16900421F88 /* PlacesMapVC.swift */; };
 		5B3648E9242BB16F00421F88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B3648E8242BB16F00421F88 /* Assets.xcassets */; };
 		5B3648EC242BB16F00421F88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B3648EA242BB16F00421F88 /* LaunchScreen.storyboard */; };
+		5B3648F6242BBD9E00421F88 /* VTTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3648F5242BBD9E00421F88 /* VTTabBarController.swift */; };
+		5B3648FA242BBEB400421F88 /* PlacesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3648F9242BBEB400421F88 /* PlacesListVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5B3648DC242BB16900421F88 /* Virtual Tourist v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Virtual Tourist v2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B3648DF242BB16900421F88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B3648E1242BB16900421F88 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5B3648E3242BB16900421F88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5B3648E3242BB16900421F88 /* PlacesMapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesMapVC.swift; sourceTree = "<group>"; };
 		5B3648E8242BB16F00421F88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B3648EB242BB16F00421F88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B3648ED242BB16F00421F88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B3648F5242BBD9E00421F88 /* VTTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTTabBarController.swift; sourceTree = "<group>"; };
+		5B3648F9242BBEB400421F88 /* PlacesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesListVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,48 @@
 		5B3648DE242BB16900421F88 /* Virtual Tourist v2 */ = {
 			isa = PBXGroup;
 			children = (
+				5B3648F7242BBDA400421F88 /* Custom Views */,
+				5B3648F4242BBB8300421F88 /* Screens */,
+				5B3648F3242BBB5000421F88 /* Support */,
+			);
+			path = "Virtual Tourist v2";
+			sourceTree = "<group>";
+		};
+		5B3648F3242BBB5000421F88 /* Support */ = {
+			isa = PBXGroup;
+			children = (
 				5B3648DF242BB16900421F88 /* AppDelegate.swift */,
 				5B3648E1242BB16900421F88 /* SceneDelegate.swift */,
-				5B3648E3242BB16900421F88 /* ViewController.swift */,
 				5B3648E8242BB16F00421F88 /* Assets.xcassets */,
 				5B3648EA242BB16F00421F88 /* LaunchScreen.storyboard */,
 				5B3648ED242BB16F00421F88 /* Info.plist */,
 			);
-			path = "Virtual Tourist v2";
+			path = Support;
+			sourceTree = "<group>";
+		};
+		5B3648F4242BBB8300421F88 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				5B3648E3242BB16900421F88 /* PlacesMapVC.swift */,
+				5B3648F9242BBEB400421F88 /* PlacesListVC.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		5B3648F7242BBDA400421F88 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				5B3648F8242BBDB800421F88 /* TabBarControllers */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		5B3648F8242BBDB800421F88 /* TabBarControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5B3648F5242BBD9E00421F88 /* VTTabBarController.swift */,
+			);
+			path = TabBarControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,7 +172,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B3648E4242BB16900421F88 /* ViewController.swift in Sources */,
+				5B3648E4242BB16900421F88 /* PlacesMapVC.swift in Sources */,
+				5B3648F6242BBD9E00421F88 /* VTTabBarController.swift in Sources */,
+				5B3648FA242BBEB400421F88 /* PlacesListVC.swift in Sources */,
 				5B3648E0242BB16900421F88 /* AppDelegate.swift in Sources */,
 				5B3648E2242BB16900421F88 /* SceneDelegate.swift in Sources */,
 			);
@@ -274,7 +314,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VGW2M4R8BY;
-				INFOPLIST_FILE = "Virtual Tourist v2/Info.plist";
+				INFOPLIST_FILE = "Virtual Tourist v2/Support/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -293,7 +333,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VGW2M4R8BY;
-				INFOPLIST_FILE = "Virtual Tourist v2/Info.plist";
+				INFOPLIST_FILE = "Virtual Tourist v2/Support/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
