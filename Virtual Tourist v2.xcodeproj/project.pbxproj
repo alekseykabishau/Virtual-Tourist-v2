@@ -10,7 +10,6 @@
 		5B3648E0242BB16900421F88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3648DF242BB16900421F88 /* AppDelegate.swift */; };
 		5B3648E2242BB16900421F88 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3648E1242BB16900421F88 /* SceneDelegate.swift */; };
 		5B3648E4242BB16900421F88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3648E3242BB16900421F88 /* ViewController.swift */; };
-		5B3648E7242BB16900421F88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B3648E5242BB16900421F88 /* Main.storyboard */; };
 		5B3648E9242BB16F00421F88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B3648E8242BB16F00421F88 /* Assets.xcassets */; };
 		5B3648EC242BB16F00421F88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B3648EA242BB16F00421F88 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -20,7 +19,6 @@
 		5B3648DF242BB16900421F88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B3648E1242BB16900421F88 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5B3648E3242BB16900421F88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5B3648E6242BB16900421F88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5B3648E8242BB16F00421F88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B3648EB242BB16F00421F88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B3648ED242BB16F00421F88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,7 +57,6 @@
 				5B3648DF242BB16900421F88 /* AppDelegate.swift */,
 				5B3648E1242BB16900421F88 /* SceneDelegate.swift */,
 				5B3648E3242BB16900421F88 /* ViewController.swift */,
-				5B3648E5242BB16900421F88 /* Main.storyboard */,
 				5B3648E8242BB16F00421F88 /* Assets.xcassets */,
 				5B3648EA242BB16F00421F88 /* LaunchScreen.storyboard */,
 				5B3648ED242BB16F00421F88 /* Info.plist */,
@@ -127,7 +124,6 @@
 			files = (
 				5B3648EC242BB16F00421F88 /* LaunchScreen.storyboard in Resources */,
 				5B3648E9242BB16F00421F88 /* Assets.xcassets in Resources */,
-				5B3648E7242BB16900421F88 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,14 +143,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5B3648E5242BB16900421F88 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5B3648E6242BB16900421F88 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5B3648EA242BB16F00421F88 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -287,6 +275,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VGW2M4R8BY;
 				INFOPLIST_FILE = "Virtual Tourist v2/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +283,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alekseykabishau.Virtual-Tourist-v2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -305,6 +294,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VGW2M4R8BY;
 				INFOPLIST_FILE = "Virtual Tourist v2/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +302,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alekseykabishau.Virtual-Tourist-v2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
