@@ -12,7 +12,7 @@ class PlaceCell: UITableViewCell {
     
     static let reuseID = "PlaceCell"
     
-    let placeNameLabel = UILabel()
+    private let placeNameLabel = UILabel()
 
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -26,8 +26,17 @@ class PlaceCell: UITableViewCell {
     }
     
     
+    func set(place: String) {
+        placeNameLabel.text = place
+    }
+    
+    
     private func configure() {
         addSubview(placeNameLabel)
+        //TODO: - consider creation Title Label class and move there
+        placeNameLabel.textAlignment = .left
+        placeNameLabel.font = UIFont.systemFont(ofSize: 24, weight: .medium)
+        placeNameLabel.translatesAutoresizingMaskIntoConstraints = false
         
         accessoryType = .disclosureIndicator
         
