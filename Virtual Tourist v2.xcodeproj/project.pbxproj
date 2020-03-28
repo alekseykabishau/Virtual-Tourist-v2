@@ -16,6 +16,7 @@
 		5B3648FA242BBEB400421F88 /* PlacesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3648F9242BBEB400421F88 /* PlacesListVC.swift */; };
 		5B3648FD242BE24500421F88 /* PlaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3648FC242BE24500421F88 /* PlaceCell.swift */; };
 		5B364900242BFC1E00421F88 /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3648FF242BFC1E00421F88 /* UITableView+Ext.swift */; };
+		5BA5745D242F02740031A846 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA5745C242F02740031A846 /* Place.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		5B3648F9242BBEB400421F88 /* PlacesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesListVC.swift; sourceTree = "<group>"; };
 		5B3648FC242BE24500421F88 /* PlaceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceCell.swift; sourceTree = "<group>"; };
 		5B3648FF242BFC1E00421F88 /* UITableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
+		5BA5745C242F02740031A846 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		5B3648DE242BB16900421F88 /* Virtual Tourist v2 */ = {
 			isa = PBXGroup;
 			children = (
+				5BA5745B242F024C0031A846 /* Model */,
 				5B3648FE242BFC0700421F88 /* Extensions */,
 				5B3648F7242BBDA400421F88 /* Custom Views */,
 				5B3648F4242BBB8300421F88 /* Screens */,
@@ -122,6 +125,14 @@
 				5B3648FF242BFC1E00421F88 /* UITableView+Ext.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5BA5745B242F024C0031A846 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5BA5745C242F02740031A846 /* Place.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +208,7 @@
 				5B3648E4242BB16900421F88 /* PlacesMapVC.swift in Sources */,
 				5B3648F6242BBD9E00421F88 /* VTTabBarController.swift in Sources */,
 				5B3648FA242BBEB400421F88 /* PlacesListVC.swift in Sources */,
+				5BA5745D242F02740031A846 /* Place.swift in Sources */,
 				5B3648E0242BB16900421F88 /* AppDelegate.swift in Sources */,
 				5B364900242BFC1E00421F88 /* UITableView+Ext.swift in Sources */,
 				5B3648E2242BB16900421F88 /* SceneDelegate.swift in Sources */,
